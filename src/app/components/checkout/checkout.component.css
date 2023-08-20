@@ -1,0 +1,16 @@
+.alert {
+    --bs-alert-bg: transparent;
+    --bs-alert-padding-x: 1rem;
+    --bs-alert-padding-y: 1rem;
+    --bs-alert-margin-bottom: 1rem;
+    --bs-alert-color: inherit;
+    --bs-alert-border-color: transparent !important;
+    /* --bs-alert-border: 1px solid var(--bs-alert-border-color); */
+    --bs-alert-border-radius: 0.375rem;
+    position: relative;
+    padding: 0 !important;
+    margin-bottom: var(--bs-alert-margin-bottom);
+    color: red !important;
+    background-color: transparent !important;
+    border-radius: var(--bs-alert-border-radius);
+}

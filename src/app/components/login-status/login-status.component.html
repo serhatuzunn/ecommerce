@@ -1,0 +1,14 @@
+<div class="login-status-header">
+    <div *ngIf="isAuth && userFullName" class="login-status-user-info">
+        Hoşgeldiniz {{userFullName}}
+    </div>
+
+    <button *ngIf="!isAuth" routerLink="/login" class="security-btn">Giriş Yap</button>
+   
+    <button *ngIf="isAuth" (click)="logout()" class="security-btn">Çıkış Yap</button>
+
+    <button *ngIf="isAuth" routerLink="/members"  class="security-btn ml-1">VIP</button>
+
+    <button *ngIf="isAuth" routerLink="/order-history" class="security-btn" ml-1>Siparişlerim</button>
+
+</div>
